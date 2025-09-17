@@ -153,7 +153,9 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <AdditionalDependencies>$(SolutionDir)..\AseApi\out_lib\ArkApi.lib;crypt32.lib;iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)..\AseApi\out_lib\ArkApi.lib;$(SolutionDir)..\AseApi\lib\Ws2_32.lib;$(SolutionDir)..\AseApi\lib\crypt32.lib;$(SolutionDir)..\AseApi\lib\iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ShowProgress>NotSet</ShowProgress>
     </Link>
     <PostBuildEvent>
       <Command>mkdir "$(SolutionDir)Output\$(Projectname)\"

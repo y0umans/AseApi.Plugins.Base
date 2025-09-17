@@ -4,4 +4,6 @@
 
 //#pragma comment(lib, "ArkApi.lib")
 
+//$(OutDir)$(TargetName)$(TargetExt)
 
+//$(SolutionDir)..\AseApi\out_lib\ArkApi.lib
